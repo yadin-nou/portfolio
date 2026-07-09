@@ -1,0 +1,64 @@
+:root {
+  --primary-color: rgb(169, 216, 232);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.wrapper {
+  font-size: 1.2rem;
+  width: 100%;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Top header section */
+.top-header {
+  background:linear-gradient()
+  height: 8vh;
+  font-size: 1rem;
+  box-shadow: 10px 10px 10px 10px;
+}
+.top-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name-title {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+  align-items: center;
+}
+.menu ul {
+  display: flex;
+  gap: 15px;
+}
+.menu ul li {
+  list-style: none;
+  cursor: pointer;
+}
+.menu ul li:hover {
+  color: red;
+  transform: scale(1.5);
+}
+
+.verticle-line {
+  width: 3px;
+  height: 20px;
+  background-color: red;
+  color: red;
+}
+/* Hero Section */
+.ch-background {
+}
+.hero {
+  background-color: var(--primary-color);
+  height: 30vh;
+  font-size: 1rem;
+}
