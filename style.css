@@ -19,10 +19,15 @@ body {
 
 /* Top header section */
 .top-header {
-  background:linear-gradient()
+  /* background: linear-gradient(
+    to bottom,
+    var(--primary-color) 0%,
+    var(--primary-color) 100%,
+    black 100%
+  ); */
+  background: var(--primary-color);
   height: 8vh;
   font-size: 1rem;
-  box-shadow: 10px 10px 10px 10px;
 }
 .top-header .container {
   display: flex;
@@ -55,10 +60,47 @@ body {
   color: red;
 }
 /* Hero Section */
-.ch-background {
-}
+
 .hero {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   background-color: var(--primary-color);
-  height: 30vh;
+  height: 40vh;
   font-size: 1rem;
+  padding-top: 10vh;
+  /* margin-top: 16px; */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  position: relative;
+}
+.ch-background {
+  position: fixed;
+  left: 50px;
+}
+header .container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.hero-detail {
+  background: red;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 15px 10%;
+}
+.download {
+  background: black;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.download a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
 }
