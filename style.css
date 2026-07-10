@@ -7,6 +7,9 @@
 body {
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .wrapper {
   font-size: 1.2rem;
@@ -23,6 +26,9 @@ body {
 .background-aboutme {
   background: rgb(86, 139, 86);
   color: white;
+}
+.background-footer {
+  background: black;
 }
 /* Top header section */
 .top-header {
@@ -51,9 +57,12 @@ body {
   display: flex;
   gap: 15px;
 }
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+}
 .menu ul li {
   list-style: none;
-  cursor: pointer;
 }
 .menu ul li:hover {
   color: red;
@@ -125,6 +134,7 @@ header .container {
 .img-yadin {
   height: 40vh;
 }
+/* link show section */
 .link-show {
   display: flex;
   height: 30vh;
@@ -211,6 +221,11 @@ header .container {
   left: 90%;
   cursor: pointer;
 }
+.clickTop a {
+  text-decoration: none;
+  color: black;
+}
+/* skills  */
 .skills {
   height: 50vh;
 }
@@ -245,7 +260,7 @@ i {
   font-size: 3rem;
   padding: 10px;
 }
-
+/* project infomation */
 .projects {
   height: 100%;
   padding-bottom: 20px;
@@ -291,14 +306,17 @@ i {
 .card-4 {
   grid-area: card-4;
 }
+
+/* about me infomation */
 .aboutme {
-  height: 100%;
+  height: 100vh;
 }
 .aboutme .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 100px;
   gap: 50px;
 }
 .aboutme .container .content {
@@ -313,4 +331,54 @@ i {
 .interest {
   display: flex;
   gap: 10px;
+}
+
+/* contact information */
+.contact {
+  height: 100vh;
+  padding-top: 100px;
+}
+.contact .container {
+}
+.contact-logo {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.email {
+  background: black;
+  width: 200px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  color: white;
+}
+/* footer */
+.footer {
+  height: 50vh;
+  color: white;
+}
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.footer-link {
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.footer .container div ul li {
+  list-style: none;
+}
+.footer .container div ul a {
+  text-decoration: none;
+  color: white;
 }

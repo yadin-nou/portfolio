@@ -13,7 +13,7 @@
   <body>
     <div class="wrapper">
       <!-- Top header section -->
-      <div class="top-header background">
+      <div class="top-header background" id="top">
         <div class="container">
           <div class="name-title">
             <strong>Yadin </strong>
@@ -21,13 +21,12 @@
             Full Stack Developer
           </div>
           <div class="menu">
-            <ul>
-              <li>Home</li>
-              <li>Skills</li>
-              <li>Projects</li>
-              <li>About</li>
-              <li>Contact</li>
-            </ul>
+            <ul>                    
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
           </div>
         </div>
       </div>
@@ -35,7 +34,7 @@
         <div class="ch-background">
           <i class="fa-solid fa-circle-half-stroke"></i>
         </div>
-        <div class="container">
+        <div class="container" id="home">
           <div class="hero-detail">
             <div>
               <h4>Hi, I'm Yadin Nou</h4>
@@ -78,10 +77,10 @@
             <div class="award-status">Experience</div>
           </div>
         </div>
-        <div class="clickTop">^</div>
+        <div class="clickTop"><a href="#top">^</a></div>
       </section>
 
-      <section class="skills background">
+      <section class="skills background" id="skill">
         <div class="container">
           <div class="title">Skills</div>
           <div class="sub-skills">
@@ -151,7 +150,7 @@
           </div>
         </div>
       </section>
-      <section class="projects background">
+      <section class="projects background" id="project">
         <div class="container">
           <div class="title">Projects</div>
           <div class="project-cards">
@@ -208,7 +207,7 @@
           </div>
       </section>
       
-         <section class="aboutme background-aboutme">
+         <section class="aboutme background-aboutme" id="aboutme">
         <div class="container">
           <div class="title">About me</div>
           <div class="content">
@@ -236,5 +235,44 @@
           </section>
     </div>
     <!--End wrapper-->
+    <section class="contact background" id="contact">
+        <div class="container">
+          <div class="title">Contact</div>
+          </div>
+          <div class="contact-logo">
+               <div><span><a href="https://www.linkedin.com/in/yadin-nou-0040971b/" target="_blank"><i class="fa-brands fa-linkedin" style="color: rgb(2, 8, 18);"></i></a></span>
+               <span><a href="https://github.com/yadin-nou" target="_blank"><i
+                  class="fa-brands fa-github"
+                  style="color: rgb(30, 48, 80)"
+                ></i></a></span>
+               <span><a href="#"><i class="fa-brands fa-youtube" style="color: rgb(2, 8, 18);"></i></a></span>
+               <span><a href="#"><i class="fa-brands fa-facebook" style="color: rgb(2, 8, 18);"></i></a></span>
+               </div>
+               <div>OR</div>
+               <div class="email">nouyadin@gmail.com <a href="mailto:nouyadin@gmail.com""><i class="fa-regular fa-paper-plane fa-sm" style="color: rgb(221, 11, 11);"></i></a></div>
+          </div>
+    </section>
+    <section class="footer background-footer">
+        <div class="container">
+              <div >
+                <div class="footer-link">Links</div>
+                   <ul>                    
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+              </div>
+              <div >
+                 <div class="footer-link">Soical</div>
+                    <ul>
+                    <li><a href="#">LinkedIN</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Facebook</a></li>
+                  </ul>
+              </div>
+          </div>
+    </section>
   </body>
 </html>
