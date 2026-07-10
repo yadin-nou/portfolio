@@ -248,6 +248,7 @@ i {
 
 .projects {
   height: 100%;
+  padding-bottom: 20px;
 }
 .projects .container {
   display: flex;
@@ -294,4 +295,22 @@ i {
   height: 100%;
 }
 .aboutme .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.aboutme .container .content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.aboutme-pic {
+}
+.aboutme-content {
+}
+.interest {
+  display: flex;
+  gap: 10px;
 }
