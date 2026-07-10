@@ -17,6 +17,9 @@ body {
   margin: auto;
 }
 
+.background {
+  background: var(--primary-color);
+}
 /* Top header section */
 .top-header {
   /* background: linear-gradient(
@@ -25,7 +28,7 @@ body {
     var(--primary-color) 100%,
     black 100%
   ); */
-  background: var(--primary-color);
+
   height: 8vh;
   font-size: 1rem;
 }
@@ -65,7 +68,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: var(--primary-color);
+
   height: 60vh;
   font-size: 1rem;
   padding-top: 10vh;
@@ -116,7 +119,6 @@ header .container {
   height: 40vh;
 }
 .link-show {
-  background: var(--primary-color);
   display: flex;
   height: 30vh;
 }
@@ -130,6 +132,7 @@ header .container {
   border-radius: 30px;
   height: 100px;
   box-shadow: rgba(0, 0, 0, 1) 2px 19px 29px -16px;
+  position: relative;
 }
 .award {
   width: 50px;
@@ -187,4 +190,48 @@ header .container {
   background-color: black;
   color: black;
   align-self: center;
+}
+.clickTop {
+  width: 50px;
+  height: 50px;
+  background: red;
+  border-radius: 50%;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  position: fixed;
+  left: 90%;
+  cursor: pointer;
+}
+.skills .container {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  gap: 30px;
+}
+.title {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 3px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.sub-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  gap: 50px;
+}
+.subskill-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+}
+i {
+  font-size: 3rem;
+  padding: 10px;
 }
