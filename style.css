@@ -169,7 +169,7 @@ p {
   align-items: center;
   gap: 50px;
   border: 1px solid var(--black-text);
-  margin-top: 50px;
+  margin-top: 100px;
   border-radius: 30px;
   height: 100px;
   box-shadow: rgba(0, 0, 0, 1) 2px 19px 29px -16px;
@@ -319,7 +319,7 @@ i {
   color: var(--black-text);
 }
 .card {
-  height: 70vh;
+  height: 65vh;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 18px 150px -20px;
   display: flex;
   flex-direction: column;
@@ -420,4 +420,142 @@ i {
 .footer .container div ul a {
   text-decoration: none;
   color: white;
+}
+@media (max-width: 768px) {
+  .top-header .container {
+    flex-direction: column;
+  }
+  .hero {
+    height: 100%;
+  }
+  header .container {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .my-pic {
+    left: 20%;
+    top: -50px;
+  }
+  .hero-detail {
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  .link-show {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+  }
+  .link-show .container {
+    height: 200px;
+    position: absolute;
+    margin-top: -30%;
+    left: 15%;
+    flex-wrap: wrap;
+  }
+  .project-cards {
+    display: grid;
+    grid-template-areas:
+      "card-1"
+      "card-2";
+    grid-template-columns: 1fr;
+  }
+  .aboutme {
+    height: 100%;
+    padding-bottom: 10px;
+  }
+  .aboutme .container .content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .link-show .container {
+    height: 45vh;
+    margin-top: -30%;
+    left: 15%;
+    flex-direction: column;
+
+    gap: 0;
+  }
+  .img-yadin {
+    height: 40vh;
+    width: 350px;
+    padding-right: 100px;
+  }
+  .my-pic {
+    left: 10%;
+    width: 300px;
+    top: -75px;
+  }
+  .hero {
+    height: 100vh;
+  }
+  .hero-detail {
+    width: 90%;
+    margin-top: 50px;
+  }
+  header .container {
+    height: 100%;
+  }
+  .v-line {
+    width: 2px;
+    height: 50px;
+    transform: rotate(90deg);
+  }
+
+  .skills {
+    height: 70vh;
+  }
+  .skills .container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+  }
+  .ch-background {
+    left: 20px;
+  }
+
+  /* .projects {
+    height: 100vh;
+    padding-bottom: 20px;
+  }
+  .projects .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  } */
+  .projects .container {
+    flex-direction: column;
+    margin: 0;
+    padding-left: 5%;
+    gap: 30px;
+  }
+  .project-cards {
+    display: grid;
+    grid-template-areas:
+      "card-1"
+      "card-2";
+    grid-template-columns: 1fr;
+  }
+  .card {
+    height: 60vh;
+    width: 350px;
+  }
+
+  .aboutme {
+    height: 100%;
+    padding-bottom: 10px;
+  }
+  .aboutme .container .content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+    height: 100%;
+  }
 }
