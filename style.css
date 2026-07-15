@@ -20,9 +20,13 @@
 * {
   box-sizing: border-box;
 }
+html,
 body {
   margin: 0;
+  overflow-x: hidden;
+  max-width: 100%;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -421,6 +425,13 @@ i {
   text-decoration: none;
   color: white;
 }
+
+[for="ch-menu"] {
+  display: none;
+}
+#ch-menu {
+  display: none;
+}
 @media (max-width: 768px) {
   .top-header .container {
     flex-direction: column;
@@ -458,7 +469,9 @@ i {
     display: grid;
     grid-template-areas:
       "card-1"
-      "card-2";
+      "card-2"
+      "card-3"
+      "card-4";
     grid-template-columns: 1fr;
   }
   .aboutme {
@@ -478,6 +491,38 @@ i {
     cursor: pointer;
     top: 80%;
   }
+
+  [for="ch-menu"] {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 85%;
+    top: 1%;
+  }
+  #ch-menu {
+    display: none;
+  }
+  .menu {
+    position: relative;
+    position: absolute;
+    left: 100%;
+    z-index: 1;
+    top: 40px;
+  }
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 25px;
+    height: 100vh;
+    width: 200px;
+    background-color: var(--primary-color);
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 1) 2px 19px 29px -16px;
+  }
+  #ch-menu:checked + .menu {
+    left: 80%;
+  }
 }
 @media (max-width: 576px) {
   .link-show .container {
@@ -488,6 +533,7 @@ i {
 
     gap: 0;
   }
+
   .img-yadin {
     height: 40vh;
     width: 350px;
@@ -546,12 +592,16 @@ i {
     display: grid;
     grid-template-areas:
       "card-1"
-      "card-2";
+      "card-2"
+      "card-3"
+      "card-4";
     grid-template-columns: 1fr;
+    gap: 10px;
   }
-  .card {
-    height: 60vh;
-    width: 350px;
+
+  .tech-stack {
+    font-size: 1rem;
+    text-align: center;
   }
 
   .aboutme {
@@ -571,5 +621,40 @@ i {
     left: 90%;
     cursor: pointer;
     top: 80%;
+  }
+
+  [for="ch-menu"] {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 85%;
+    top: 1%;
+  }
+  #ch-menu {
+    display: none;
+  }
+  .menu {
+    position: relative;
+    position: absolute;
+    left: 100%;
+    z-index: 2;
+    top: 40px;
+    display: none;
+  }
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 25px;
+    height: 100vh;
+    width: 200px;
+    background-color: var(--primary-color);
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 1) 2px 19px 29px -16px;
+    z-index: 1;
+  }
+  #ch-menu:checked + .menu {
+    left: 52%;
+    display: block;
   }
 }
