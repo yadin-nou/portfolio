@@ -471,6 +471,13 @@ i {
     flex-direction: column;
     gap: 50px;
   }
+  .clickTop {
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    cursor: pointer;
+    top: 80%;
+  }
 }
 @media (max-width: 576px) {
   .link-show .container {
@@ -557,5 +564,12 @@ i {
     flex-direction: column;
     gap: 50px;
     height: 100%;
+  }
+  .clickTop {
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    cursor: pointer;
+    top: 80%;
   }
 }
