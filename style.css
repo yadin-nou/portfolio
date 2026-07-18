@@ -499,6 +499,9 @@ i {
     left: 85%;
     top: 1%;
   }
+  [for="ch-menu"] i {
+    color: var(--black-text);
+  }
   #ch-menu {
     display: none;
   }
@@ -629,6 +632,9 @@ i {
     position: absolute;
     left: 85%;
     top: 1%;
+  }
+  [for="ch-menu"] i {
+    color: var(--black-text);
   }
   #ch-menu {
     display: none;
