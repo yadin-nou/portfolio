@@ -38,6 +38,7 @@ html {
 .container {
   width: 80%;
   margin: auto;
+  max-width: 1400px;
 }
 
 .background {
@@ -272,6 +273,8 @@ p {
   font-size: 2rem;
   display: flex;
   justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 .sub-skills {
   display: flex;
@@ -294,53 +297,37 @@ i {
 .projects {
   height: 100%;
   padding-bottom: 20px;
+  width: 100%;
 }
-.projects .container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.project-cards {
+.projects-container {
   display: grid;
-  grid-template-areas:
-    "card-1 card-2"
-    "card-3 card-4";
-  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
-.pro-img {
+
+.pro-title {
+  color: var(--black-text);
   display: flex;
   justify-content: center;
-}
-.pro-img-size {
-  width: 100%;
-  height: 40vh;
-}
-.pro-title h3 {
-  color: var(--black-text);
-}
-.tech-stack {
-  color: var(--black-text);
-}
-.card {
-  height: 65vh;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 18px 150px -20px;
-  display: flex;
   flex-direction: column;
+  align-items: start;
+  padding-left: 10px;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 18px 150px -20px;
+  border-radius: 5px;
+  padding-bottom: 3rem;
+  width: auto;
+}
+.card img {
+  width: 100%;
+}
+.git-link {
+  display: flex;
   justify-content: center;
   align-items: center;
-}
-.card-1 {
-  grid-area: card-1;
-}
-.card-2 {
-  grid-area: card-2;
-}
-.card-3 {
-  grid-area: card-3;
-}
-.card-4 {
-  grid-area: card-4;
 }
 
 /* about me infomation */
@@ -352,7 +339,7 @@ i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
+
   gap: 50px;
 }
 .aboutme .container .content {
@@ -465,14 +452,22 @@ i {
     left: 15%;
     flex-wrap: wrap;
   }
-  .project-cards {
-    display: grid;
-    grid-template-areas:
-      "card-1"
-      "card-2"
-      "card-3"
-      "card-4";
-    grid-template-columns: 1fr;
+  .projects-container {
+    /* display: flex;
+    flex-direction: column; */
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    width: 500px;
+  }
+  .card img {
+    width: 100%;
+  }
+
+  .pro-title {
+    font-size: 1rem;
+    text-align: center;
   }
   .aboutme {
     height: 100%;
@@ -576,35 +571,20 @@ i {
     left: 20px;
   }
 
-  /* .projects {
-    height: 100vh;
-    padding-bottom: 20px;
-  }
-  .projects .container {
+  .projects-container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-  } */
-  .projects .container {
-    flex-direction: column;
-    margin: 0;
-    padding-left: 5%;
-    gap: 30px;
-  }
-  .project-cards {
-    display: grid;
-    grid-template-areas:
-      "card-1"
-      "card-2"
-      "card-3"
-      "card-4";
-    grid-template-columns: 1fr;
-    gap: 10px;
   }
 
-  .tech-stack {
+  .pro-title {
     font-size: 1rem;
     text-align: center;
+  }
+  .card {
+    width: 400px;
+  }
+  .card img {
+    width: 100%;
   }
 
   .aboutme {
