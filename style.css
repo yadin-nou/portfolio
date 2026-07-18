@@ -121,6 +121,10 @@ html {
   font-size: 1.5rem !important;
   color: var(--black-text);
 }
+.ch-background:hover {
+  transform: scale(1.5);
+  transition: all 0.5s;
+}
 header .container {
   display: flex;
   justify-content: center;
